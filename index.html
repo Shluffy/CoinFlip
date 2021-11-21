@@ -2,4 +2,42 @@
 
 <html>
   
+  <div id="btn">
+  
+    <center>
+  
+    <button onlick="registerH()">Heads</button><button onlick="registerT()">Tails</button>
+  
+    </center>
+  
+  </div>
+  
+  <script>
+    
+    function registerH(){
+    const answer = Math.floor(Math.random()*2);
+    if (answer == 0){
+    alert("The correct answer is heads.");
+    alert("You were correct.");
+    }
+    else  if (answer == 1){
+    alert("The correct answer is tails.");
+    alert("You were incorrect.");
+    }
+    }
+    
+    function registerT(){
+        const answer = Math.floor(Math.random()*2);
+    if (answer == 0){
+    alert("The correct answer is heads.");
+    alert("You were incorrect.");
+    }
+    else  if (answer == 1){
+    alert("The correct answer is tails.");
+    alert("You were correct.");
+    }
+    }
+    
+  </script>
+  
 </html>
